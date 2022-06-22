@@ -8,7 +8,7 @@ ec2Resource = boto3.resource('ec2')
 # It will only associate the Elastic IP to the tagged instance
 def lambda_handler(event, context):
     # Elastic IP Allocation ID
-    allocationID = 'eipalloc-08428a8888ad25eb2'
+    allocationID = '<Put here the elastic IP allocation id>'
     # Filter the instance by Tag
     instanceByTag = ec2Resource.instances.filter(
         Filters=[
