@@ -1,6 +1,6 @@
 import boto3
 
-#The following script checks for unsused key pairs on AWS account
+#The following script checks for unsused ec2 key pairs on AWS account
 region = '<Region>'
 ec2_client = boto3.client('ec2')
 response = ec2_client.describe_key_pairs()['KeyPairs']
